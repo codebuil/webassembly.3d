@@ -13,7 +13,7 @@ double wasm_draw3Dy(double x, double y, double z) {
   double zzz=scale/zz;
   double zzzz=scale/2-zzz/2;
   double zzzzz=(zzz/units)*(units-y);
-  double zzzzzz=zzzz+zzzzz;
+  double zzzzzz=zzzz+zzzzz-(z*2);
   return zzzzzz;  
 }
 void setScale(double sc){
